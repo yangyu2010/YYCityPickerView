@@ -107,19 +107,22 @@ extension CityPickerView : UIPickerViewDelegate {
 
         if component == 0 {
             provinceIndex = row
+            cityIndex = 0
+            areaIndex = 0
             pickerView.reloadComponent(1)
             pickerView.reloadComponent(2)
             pickerView.selectRow(0, inComponent: 1, animated: true)
             pickerView.selectRow(0, inComponent: 2, animated: true)
         }else if component == 1 {
             cityIndex = row
+            areaIndex = 0
             pickerView.reloadComponent(2)
             pickerView.selectRow(0, inComponent: 2, animated: true)
         }else {
             areaIndex = row
         }
         
-        //settleAllName()
+        settleAllName()
     }
 }
 
@@ -138,6 +141,19 @@ extension CityPickerView {
 
     }
 
+    fileprivate func settleAllName() {
+       
+        let province = provinceArr[provinceIndex]
+        let city = province.sub_area[cityIndex]
+        var areaName = ""
+
+        if city.sub_area.count > 0 {
+            areaName = city.sub_area[areaIndex].name!
+        }
+        
+        selfDelegate?.cityPickerViewDidSelect(cityString: province.name! + " " + city.name! + " " + areaName)
+        
+    }
 }
 
 
