@@ -7,66 +7,33 @@
 //
 
 import UIKit
+import HandyJSON
 
-class CityModel: NSObject {
+class CityModel: NSObject{
 
 }
 
 
-class Province: NSObject {
+class Province: HandyJSON {
     var code : String?
     var name : String?
     var sub_area : [City] = [City]()
     
-//    init(dict : [String : Any]) {
-//        super.init()
-//        
-//        setValuesForKeys(dict)
-//        
-//        if let sub_area = dict["sub_area"] as? [[String : Any]] {
-//            for area in sub_area {
-//                let model = City(dict: area)
-//                self.sub_area.append(model)
-//            }
-//        }
-//    }
-//    
-//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-//    }
-    
+    required init() {}
 }
 
-class City: NSObject {
+class City : HandyJSON {
     var code : String?
     var name : String?
     var sub_area : [Area] = [Area]()
     
-//    init(dict : [String : Any]) {
-//        super.init()
-//        setValuesForKeys(dict)
-//        
-//        if let sub_area = dict["sub_area"] as? [[String : Any]] {
-//            for area in sub_area {
-//                let model = Area(dict: area)
-//                self.sub_area.append(model)
-//            }
-//        }
-//    }
-//    
-//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-//    }
+    required init() {}
 }
 
-class Area: NSObject {
+class Area : HandyJSON {
     
     var code : String?
     var name : String?
     
-//    init(dict : [String : Any]) {
-//        super.init()
-//        setValuesForKeys(dict)
-//    }
-//    
-//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-//    }
+    required init() {}
 }

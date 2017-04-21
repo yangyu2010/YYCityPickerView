@@ -17,6 +17,7 @@
 		86F340B01EA9FE2C008E06D2 /* CityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */; };
 		86F340B21EAA01CE008E06D2 /* cityCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86F340B11EAA01CE008E06D2 /* cityCode.plist */; };
 		86F340BA1EAA05AD008E06D2 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F340B91EAA05AD008E06D2 /* CityModel.swift */; };
+		86F340BE1EAA2C90008E06D2 /* cityCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86F340BD1EAA2C90008E06D2 /* cityCode.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerView.swift; sourceTree = "<group>"; };
 		86F340B11EAA01CE008E06D2 /* cityCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityCode.plist; sourceTree = "<group>"; };
 		86F340B91EAA05AD008E06D2 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		86F340BD1EAA2C90008E06D2 /* cityCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityCode.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		86F340AA1EA9FD41008E06D2 /* YYCityPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				86F340BD1EAA2C90008E06D2 /* cityCode.plist */,
 				86F340AB1EA9FD41008E06D2 /* all_area.json */,
 				86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */,
 				86F340B91EAA05AD008E06D2 /* CityModel.swift */,
@@ -173,6 +176,7 @@
 			files = (
 				86F340A31EA9FD37008E06D2 /* LaunchScreen.storyboard in Resources */,
 				86F340A01EA9FD37008E06D2 /* Assets.xcassets in Resources */,
+				86F340BE1EAA2C90008E06D2 /* cityCode.plist in Resources */,
 				86F340AD1EA9FD41008E06D2 /* all_area.json in Resources */,
 				86F3409E1EA9FD37008E06D2 /* Main.storyboard in Resources */,
 				86F340B21EAA01CE008E06D2 /* cityCode.plist in Resources */,
