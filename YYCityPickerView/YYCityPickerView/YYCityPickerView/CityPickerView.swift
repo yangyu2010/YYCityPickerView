@@ -110,11 +110,27 @@ extension CityPickerView {
     /// 取出数据
     fileprivate func loadCityData() {
 
+        //guard let path = Bundle.main.path(forResource: "all_area", ofType: "json") else { return }
+        
+        
+        
         guard let url = Bundle.main.url(forResource: "all_area", withExtension: "json") else { return }
         guard let data = try? Data(contentsOf: url) else { return }
         guard let total = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [[String : Any]] else { return }
         
         totalData += total
+        
+        
+        var modelsArr : [Province] = [Province]()
+        
+        for dict in totalData {
+            let model = Province(dict: dict)
+            modelsArr.append(model)
+            
+        }
+        
+        print(modelsArr.count)
+        
         
         // 取出所有省份
         for(_, value) in totalData.enumerated() {

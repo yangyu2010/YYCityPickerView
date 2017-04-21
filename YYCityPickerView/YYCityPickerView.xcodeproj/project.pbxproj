@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31AB6EDC21809DF5C1FC926F /* Pods_YYCityPickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBC2013AE4C6056B61164A1 /* Pods_YYCityPickerView.framework */; };
 		86F340991EA9FD37008E06D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F340981EA9FD37008E06D2 /* AppDelegate.swift */; };
 		86F3409B1EA9FD37008E06D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F3409A1EA9FD37008E06D2 /* ViewController.swift */; };
 		86F3409E1EA9FD37008E06D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F3409C1EA9FD37008E06D2 /* Main.storyboard */; };
@@ -14,9 +15,14 @@
 		86F340A31EA9FD37008E06D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F340A11EA9FD37008E06D2 /* LaunchScreen.storyboard */; };
 		86F340AD1EA9FD41008E06D2 /* all_area.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F340AB1EA9FD41008E06D2 /* all_area.json */; };
 		86F340B01EA9FE2C008E06D2 /* CityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */; };
+		86F340B21EAA01CE008E06D2 /* cityCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86F340B11EAA01CE008E06D2 /* cityCode.plist */; };
+		86F340BA1EAA05AD008E06D2 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F340B91EAA05AD008E06D2 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B59351713AB644F62012B43 /* Pods-YYCityPickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCityPickerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYCityPickerView/Pods-YYCityPickerView.debug.xcconfig"; sourceTree = "<group>"; };
+		7BBC2013AE4C6056B61164A1 /* Pods_YYCityPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYCityPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7F5568578D922F90C7B457 /* Pods-YYCityPickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYCityPickerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYCityPickerView/Pods-YYCityPickerView.release.xcconfig"; sourceTree = "<group>"; };
 		86F340951EA9FD37008E06D2 /* YYCityPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYCityPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F340981EA9FD37008E06D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86F3409A1EA9FD37008E06D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		86F340A41EA9FD37008E06D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F340AB1EA9FD41008E06D2 /* all_area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all_area.json; sourceTree = "<group>"; };
 		86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerView.swift; sourceTree = "<group>"; };
+		86F340B11EAA01CE008E06D2 /* cityCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityCode.plist; sourceTree = "<group>"; };
+		86F340B91EAA05AD008E06D2 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AB6EDC21809DF5C1FC926F /* Pods_YYCityPickerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A9A8A044D53159F0ECB569 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBC2013AE4C6056B61164A1 /* Pods_YYCityPickerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86F3408C1EA9FD37008E06D2 = {
 			isa = PBXGroup;
 			children = (
 				86F340971EA9FD37008E06D2 /* YYCityPickerView */,
 				86F340961EA9FD37008E06D2 /* Products */,
+				B6F38F2462107EC52FD24C00 /* Pods */,
+				50A9A8A044D53159F0ECB569 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,7 @@
 				86F3409C1EA9FD37008E06D2 /* Main.storyboard */,
 				86F3409F1EA9FD37008E06D2 /* Assets.xcassets */,
 				86F340A11EA9FD37008E06D2 /* LaunchScreen.storyboard */,
+				86F340B11EAA01CE008E06D2 /* cityCode.plist */,
 				86F340A41EA9FD37008E06D2 /* Info.plist */,
 			);
 			path = YYCityPickerView;
@@ -74,8 +94,18 @@
 			children = (
 				86F340AB1EA9FD41008E06D2 /* all_area.json */,
 				86F340AF1EA9FE2C008E06D2 /* CityPickerView.swift */,
+				86F340B91EAA05AD008E06D2 /* CityModel.swift */,
 			);
 			path = YYCityPickerView;
+			sourceTree = "<group>";
+		};
+		B6F38F2462107EC52FD24C00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B59351713AB644F62012B43 /* Pods-YYCityPickerView.debug.xcconfig */,
+				7D7F5568578D922F90C7B457 /* Pods-YYCityPickerView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86F340A71EA9FD37008E06D2 /* Build configuration list for PBXNativeTarget "YYCityPickerView" */;
 			buildPhases = (
+				4AE2DE154323A6FD524910FE /* [CP] Check Pods Manifest.lock */,
 				86F340911EA9FD37008E06D2 /* Sources */,
 				86F340921EA9FD37008E06D2 /* Frameworks */,
 				86F340931EA9FD37008E06D2 /* Resources */,
+				162550A4ABFAE2109271D40A /* [CP] Embed Pods Frameworks */,
+				F0A008D41514ABBFE1C59E02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,16 +175,66 @@
 				86F340A01EA9FD37008E06D2 /* Assets.xcassets in Resources */,
 				86F340AD1EA9FD41008E06D2 /* all_area.json in Resources */,
 				86F3409E1EA9FD37008E06D2 /* Main.storyboard in Resources */,
+				86F340B21EAA01CE008E06D2 /* cityCode.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		162550A4ABFAE2109271D40A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYCityPickerView/Pods-YYCityPickerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE2DE154323A6FD524910FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0A008D41514ABBFE1C59E02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYCityPickerView/Pods-YYCityPickerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86F340911EA9FD37008E06D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F340BA1EAA05AD008E06D2 /* CityModel.swift in Sources */,
 				86F3409B1EA9FD37008E06D2 /* ViewController.swift in Sources */,
 				86F340991EA9FD37008E06D2 /* AppDelegate.swift in Sources */,
 				86F340B01EA9FE2C008E06D2 /* CityPickerView.swift in Sources */,
@@ -275,6 +358,7 @@
 		};
 		86F340A81EA9FD37008E06D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B59351713AB644F62012B43 /* Pods-YYCityPickerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD8XR93YF6;
@@ -289,6 +373,7 @@
 		};
 		86F340A91EA9FD37008E06D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7F5568578D922F90C7B457 /* Pods-YYCityPickerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD8XR93YF6;
@@ -320,6 +405,7 @@
 				86F340A91EA9FD37008E06D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
